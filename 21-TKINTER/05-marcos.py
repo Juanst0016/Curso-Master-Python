@@ -17,6 +17,20 @@ marco.config(
 
     )
 marco.pack(side = LEFT, anchor = SW)
+marco.pack_propagate(False)
+
+texto = Label(marco, text = "Primer marco ")
+
+texto.config(
+    bg = "red",
+    fg = "white",
+    font = ("Arial, 20"),
+    bd = 3,
+    relief = SOLID,
+    anchor = CENTER
+)
+
+texto.pack(fill =Y , expand = YES)
 
 
 marco = Frame(marco_padre, width = 250, height = 250)
@@ -39,6 +53,8 @@ marco.config(
 
     )
 marco.pack(side = LEFT)
+
+
 
 marco = Frame(marco_padre, width = 250, height = 250)
 marco.config(
